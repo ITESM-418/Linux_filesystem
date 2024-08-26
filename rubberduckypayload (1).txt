@@ -1,0 +1,17 @@
+DELAY 1000
+REM Open terminal
+GUI r
+DELAY 500
+STRING gnome-terminal
+ENTER
+DELAY 1000
+
+REM Execute commands
+STRING touch /etc/postgresql/9.6/main/postgresql.conf
+ENTER
+DELAY 500
+STRING mkdir -p /home/student/.ssh
+ENTER
+DELAY 500
+STRING touch /home/student/.ssh/flag.pem
+ENTER
